@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_editor_absoluteY="0dp"
+    tools:layout_editor_absoluteX="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+   >
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        tools:ignore="MissingClass,MissingConstraints">
+
+        <ImageView
+            android:id="@+id/newback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Add phone number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+             />
+
+    </androidx.appcompat.widget.Toolbar>
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@drawable/flag_vn"
+        android:id="@+id/countryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:id="@+id/countryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:text="VN"
+         />
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_gravity="center|bottom"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:text="+84"
+        android:textSize="25dp"
+        android:id="@+id/countryDialCode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="numberDecimal" />
+    <EditText
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:textSize="25dp"
+        android:id="@+id/countryDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+
+</LinearLayout>
+
+  <LinearLayout
+      android:layout_marginTop="150dp"
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_height="match_parent">
+      <TextView
+          android:layout_marginBottom="30dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="We will send an authentication code via SMS"
+          android:textColor="@color/black" />
+
+      <Button
+          android:textAllCaps="false"
+          android:id="@+id/buttonOpen"
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:enabled="false"
+          android:background="@drawable/button_3state"
+          android:gravity="center"
+          android:text="Save"
+          android:textAlignment="center"
+          android:textColor="@color/white" />
+  </LinearLayout>
+
+</LinearLayout>
